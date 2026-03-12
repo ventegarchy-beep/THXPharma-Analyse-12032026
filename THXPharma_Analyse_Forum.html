@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>THX Pharma — Analyse & Perspectives 12/03/2026</title>
+<link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#040a08;--surface:#080f0c;--surface2:#0d1a14;--border:#122018;--accent:#4ade80;--green:#34d399;--blue:#60a5fa;--warn:#fbbf24;--danger:#f87171;--orange:#fb923c;--purple:#c084fc;--teal:#2dd4bf;--text:#b0cfc0;--heading:#e0f8ec;--muted:#1a3028}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--bg);color:var(--text);font-family:'Exo 2',sans-serif;font-size:14.5px;line-height:1.7;padding:28px 18px 60px}
+.wrap{max-width:900px;margin:0 auto}
+.hero{background:linear-gradient(135deg,#04100a,#061510);border:1px solid var(--border);border-top:3px solid var(--accent);border-radius:14px;padding:26px 28px 22px;margin-bottom:24px;position:relative;overflow:hidden}
+.hero::before{content:'🧬';position:absolute;right:28px;top:50%;transform:translateY(-50%);font-size:80px;opacity:.06;pointer-events:none}
+.badge{display:inline-flex;align-items:center;background:rgba(74,222,128,.1);border:1px solid rgba(74,222,128,.28);border-radius:20px;padding:4px 14px;font-size:11px;font-weight:700;color:var(--accent);letter-spacing:1.5px;text-transform:uppercase;margin-bottom:14px}
+.hero h1{font-size:22px;font-weight:900;color:var(--heading);line-height:1.25;margin-bottom:10px}
+.hero-meta{display:flex;flex-wrap:wrap;gap:14px;font-size:12px;color:var(--muted)}
+.alert{border-radius:12px;padding:16px 20px;margin-bottom:14px}
+.ag{background:rgba(52,211,153,.07);border:1px solid rgba(52,211,153,.28)}
+.ag .at{font-size:11px;font-weight:800;letter-spacing:2px;text-transform:uppercase;color:var(--green);margin-bottom:8px}
+.ag p{color:#a7f3d0;font-size:13.5px;margin-bottom:5px}
+.aw{background:rgba(251,191,36,.07);border:1px solid rgba(251,191,36,.28)}
+.aw .at{font-size:11px;font-weight:800;letter-spacing:2px;text-transform:uppercase;color:var(--warn);margin-bottom:8px}
+.aw p{color:#fde68a;font-size:13.5px;margin-bottom:5px}
+.ap{background:rgba(192,132,252,.07);border:1px solid rgba(192,132,252,.28)}
+.ap .at{font-size:11px;font-weight:800;letter-spacing:2px;text-transform:uppercase;color:var(--purple);margin-bottom:8px}
+.ap p{color:#e9d5ff;font-size:13.5px;margin-bottom:5px}
+.alert p:last-child{margin-bottom:0}
+strong{color:var(--heading);font-weight:700}
+.slbl{font-size:11px;font-weight:700;letter-spacing:2.5px;text-transform:uppercase;color:var(--accent);margin-bottom:14px;display:flex;align-items:center;gap:10px}
+.slbl::after{content:'';flex:1;height:1px;background:var(--border)}
+.kg{display:grid;grid-template-columns:repeat(auto-fill,minmax(175px,1fr));gap:10px;margin-bottom:28px}
+.kpi{background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:14px 16px}
+.kl{font-size:10.5px;color:var(--muted);text-transform:uppercase;letter-spacing:1px;margin-bottom:5px}
+.kv{font-family:'JetBrains Mono',monospace;font-size:17px;font-weight:600;color:var(--heading);margin-bottom:3px}
+.kd{font-family:'JetBrains Mono',monospace;font-size:12px;font-weight:700}
+.kd.up{color:var(--green)}.kd.warn{color:var(--warn)}.kd.bl{color:var(--blue)}.kd.red{color:var(--danger)}.kd.p{color:var(--purple)}.kd.t{color:var(--teal)}
+.ks{font-size:10.5px;color:var(--muted);margin-top:2px}
+.card{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:20px 22px;margin-bottom:12px}
+.card h3{font-size:14.5px;font-weight:700;color:var(--heading);margin-bottom:11px;display:flex;align-items:center;gap:9px}
+.ic{width:26px;height:26px;border-radius:6px;background:rgba(74,222,128,.12);display:flex;align-items:center;justify-content:center;font-size:13px;flex-shrink:0}
+.card p{color:#618070;margin-bottom:9px;font-size:14px}
+.card p:last-child{margin-bottom:0}
+.hl{color:var(--green);font-weight:600}.hlb{color:var(--blue);font-weight:600}.hlw{color:var(--warn);font-weight:600}.hlr{color:var(--danger);font-weight:600}.hlp{color:var(--purple);font-weight:600}.hlo{color:var(--orange);font-weight:600}.hlt{color:var(--teal);font-weight:600}
+.dt{width:100%;border-collapse:collapse;font-size:13px;margin:10px 0}
+.dt th{text-align:left;padding:8px 10px;background:var(--surface2);color:var(--muted);font-size:10.5px;text-transform:uppercase;letter-spacing:1px;font-weight:600}
+.dt td{padding:8px 10px;border-bottom:1px solid var(--border);color:#618070}
+.dt tr:last-child td{border-bottom:none}
+.dt td:first-child{color:var(--heading);font-weight:600}
+.dt td.g{color:var(--green);font-family:'JetBrains Mono',monospace;font-weight:700}
+.dt td.b{color:var(--blue);font-family:'JetBrains Mono',monospace;font-weight:700}
+.dt td.w{color:var(--warn);font-family:'JetBrains Mono',monospace;font-weight:700}
+.dt td.r{color:var(--danger);font-family:'JetBrains Mono',monospace;font-weight:700}
+.dt td.p{color:var(--purple);font-family:'JetBrains Mono',monospace;font-weight:700}
+.dt td.t{color:var(--teal);font-family:'JetBrains Mono',monospace;font-weight:700}
+.ul{list-style:none;padding:0}
+.ul li{padding:4px 0 4px 20px;position:relative;color:#618070;font-size:14px}
+.ul li::before{content:'→';position:absolute;left:0;color:var(--green);font-weight:700}
+.ul li.risk::before{content:'⚠';color:var(--danger);font-size:11px;top:6px}
+.ul li.neu::before{content:'◆';color:var(--teal);font-size:9px;top:7px}
+.tl{position:relative;padding-left:20px}
+.tl::before{content:'';position:absolute;left:6px;top:6px;bottom:6px;width:2px;background:var(--border)}
+.tli{position:relative;padding-bottom:16px}
+.tli:last-child{padding-bottom:0}
+.tld{position:absolute;left:-18px;top:5px;width:10px;height:10px;border-radius:50%;border:2px solid var(--accent);background:var(--bg)}
+.tld.g{border-color:var(--green)}.tld.w{border-color:var(--warn)}.tld.p{border-color:var(--purple)}.tld.t{border-color:var(--teal)}
+.tldate{font-size:11px;font-family:'JetBrains Mono',monospace;color:var(--accent);font-weight:600;margin-bottom:2px}
+.tllbl{font-size:13.5px;color:var(--heading);font-weight:600}
+.tldesc{font-size:12.5px;color:var(--muted);margin-top:2px}
+.frow{display:flex;align-items:center;gap:10px;padding:7px 0;border-bottom:1px solid var(--border)}
+.frow:last-child{border-bottom:none}
+.flvl{font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--muted);width:80px}
+.fprice{font-family:'JetBrains Mono',monospace;font-size:15px;font-weight:600;color:var(--heading);width:72px}
+.fbar{flex:1;height:4px;background:var(--surface2);border-radius:2px;overflow:hidden}
+.fbar-fill{height:100%;border-radius:2px}
+.ftag{width:120px;text-align:right}
+.tag{display:inline-block;padding:2px 9px;border-radius:20px;font-size:11px;font-weight:700}
+.tg{background:rgba(52,211,153,.12);color:var(--green)}
+.tb{background:rgba(96,165,250,.12);color:var(--blue)}
+.tw{background:rgba(251,191,36,.12);color:var(--warn)}
+.tr{background:rgba(248,113,113,.12);color:var(--danger)}
+.tp{background:rgba(192,132,252,.12);color:var(--purple)}
+.tt{background:rgba(45,212,191,.12);color:var(--teal)}
+.pg{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:12px}
+@media(max-width:600px){.pg{grid-template-columns:1fr}}
+.pc{background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:16px}
+.pc .hz{font-size:10.5px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:8px}
+.pc h4{font-size:13px;color:var(--heading);margin-bottom:6px}
+.pc ul{list-style:none;padding:0}
+.pc ul li{font-size:12.5px;color:var(--muted);padding:3px 0 3px 12px;position:relative}
+.pc ul li::before{content:'·';position:absolute;left:0;font-weight:900;font-size:16px;top:-1px}
+.deal-box{background:linear-gradient(135deg,rgba(74,222,128,.06),rgba(45,212,191,.04));border:1px solid rgba(74,222,128,.25);border-radius:12px;padding:20px 22px;margin:14px 0}
+.deal-title{font-size:11px;font-weight:800;letter-spacing:2px;text-transform:uppercase;color:var(--accent);margin-bottom:12px}
+.deal-row{display:flex;justify-content:space-between;align-items:center;padding:8px 0;border-bottom:1px solid var(--border)}
+.deal-row:last-child{border-bottom:none}
+.deal-lbl{font-size:13px;color:#618070}
+.deal-val{font-family:'JetBrains Mono',monospace;font-size:14px;font-weight:700;color:var(--green)}
+.verdict{background:linear-gradient(135deg,rgba(74,222,128,.05),rgba(45,212,191,.03));border:1px solid rgba(74,222,128,.2);border-radius:12px;padding:22px}
+.verdict .vt{font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--accent);margin-bottom:12px}
+.verdict p{color:#618070;margin-bottom:9px;font-size:14px}
+.verdict p:last-child{margin-bottom:0}
+.conclu{font-size:14.5px;font-weight:600;color:var(--heading);border-top:1px solid var(--border);padding-top:13px;margin-top:13px}
+.gap{height:26px}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<div class="hero">
+  <div class="badge">🧬 Analyse Forum · ALTHX · Euronext Growth · PEA-PME</div>
+  <h1>THX Pharma (ex-Theranexus) — Analyse Fondamentale &amp; Technique<br>+ Perspectives CT / MT / LT</h1>
+  <div class="hero-meta">
+    <span>📅 12 mars 2026</span>
+    <span>💶 Cours ~3,13 € (-3,69%)</span>
+    <span>🧬 Maladies neurologiques rares · Lyon</span>
+    <span>⚠️ NPC — pas un conseil en investissement</span>
+  </div>
+</div>
+
+<!-- ALERT DEAL -->
+<div class="alert ag">
+  <div class="at">🏆 Deal transformateur — Accord Biocodex 10 fév. 2026 : jusqu'à 173 M€ pour deux licences</div>
+  <p><strong>THX Pharma a signé le 10 février 2026 un accord stratégique de licences avec Biocodex (groupe pharma international indépendant, CA &gt;1 Md€) — le plus grand deal de l'histoire de la société.</strong> Biocodex acquiert une licence mondiale exclusive sur Batten-1 et une licence US/Canada exclusive sur TX01, pour un total pouvant atteindre 173 M€ (12 M€ upfront + 161 M€ en milestones) + redevances à deux chiffres sur les ventes nettes. Biocodex couvre de surcroît <strong>l'intégralité des coûts de développement de Batten-1</strong>. À titre de comparaison, la capitalisation boursière de THX Pharma est d'environ 37-40 M€ — le deal représente 4-5× la capitalisation en valeur potentielle totale.</p>
+</div>
+
+<!-- ALERT TRÉSORERIE -->
+<div class="alert ap">
+  <div class="at">💰 Trésorerie pro forma 21,7 M€ — runway confortable jusqu'en 2028</div>
+  <p><strong>Au 31 décembre 2025 : 7,764 M€ de trésorerie.</strong> Conformément à l'accord Biocodex, le versement initial de <strong>12 M€ est attendu courant mars 2026</strong> — ce qui porte la trésorerie pro forma à <strong>21,7 M€</strong>. Avec un burn rate maîtrisé (~3-4 M€/an), le runway s'étend jusqu'en 2028 sans lever de fonds supplémentaire. Cette visibilité financière est le facteur de dérisquage n°1 du dossier à court terme.</p>
+</div>
+
+<!-- KPIs -->
+<div class="slbl">Chiffres clés — au 12/03/2026</div>
+<div class="kg">
+  <div class="kpi"><div class="kl">Cours</div><div class="kv">3,13 €</div><div class="kd red">▼ -3,69%</div><div class="ks">consolidation post-deal</div></div>
+  <div class="kpi"><div class="kl">Deal Biocodex total</div><div class="kv">≤173 M€</div><div class="kd up">▲ 4-5× capi</div><div class="ks">12 M€ upfront + 161 M€ milestones</div></div>
+  <div class="kpi"><div class="kl">Trésorerie pro forma</div><div class="kv">21,7 M€</div><div class="kd up">▲ sécurisée</div><div class="ks">versement Biocodex mars 2026</div></div>
+  <div class="kpi"><div class="kl">TX01 — dépôts régl.</div><div class="kv">2026</div><div class="kd t">◆ cette année</div><div class="ks">commercialisation 2027</div></div>
+  <div class="kpi"><div class="kl">Batten-1 — Phase 3</div><div class="kv">2026</div><div class="kd up">▲ démarrage</div><div class="ks">premier traitement CLN3</div></div>
+  <div class="kpi"><div class="kl">Objectif analyste</div><div class="kv">5,80 €</div><div class="kd up">▲ +85%</div><div class="ks">1 broker · Achat</div></div>
+</div>
+
+<!-- LE DEAL BIOCODEX EN DÉTAIL -->
+<div class="gap"></div>
+<div class="slbl">🏆 Le deal Biocodex — anatomie d'un accord transformateur</div>
+<div class="card">
+  <h3><span class="ic">📋</span> 173 M€ potentiels + redevances à deux chiffres pour deux licences — un deal rare à cette taille</h3>
+
+  <div class="deal-box">
+    <div class="deal-title">Structure financière de l'accord (10 fév. 2026)</div>
+    <div class="deal-row"><div class="deal-lbl">Paiement initial (upfront)</div><div class="deal-val">12 M€ — mars 2026 ✓</div></div>
+    <div class="deal-row"><div class="deal-lbl">Milestones développement + commercialisation</div><div class="deal-val">jusqu'à 161 M€</div></div>
+    <div class="deal-row"><div class="deal-lbl">Redevances sur ventes nettes</div><div class="deal-val">deux chiffres (%) — récurrentes</div></div>
+    <div class="deal-row"><div class="deal-lbl">Coûts développement Batten-1</div><div class="deal-val">100% pris en charge par Biocodex</div></div>
+    <div class="deal-row"><div class="deal-lbl"><strong style="color:var(--heading)">TOTAL POTENTIEL</strong></div><div class="deal-val" style="color:var(--accent);font-size:17px">≤ 173 M€ + royalties</div></div>
+  </div>
+
+  <table class="dt">
+    <tr><th>Licence</th><th>Produit</th><th>Territoire</th><th>Indication</th><th>Commercialisation</th></tr>
+    <tr><td>Mondiale exclusive</td><td style="color:#618070;font-size:12px"><strong style="color:var(--heading)">Batten-1</strong></td><td class="g">Monde entier</td><td style="color:#618070;font-size:12px">Maladie de Batten juvénile (CLN3)</td><td class="t">2029-2030</td></tr>
+    <tr><td>US + Canada exclusive</td><td style="color:#618070;font-size:12px"><strong style="color:var(--heading)">TX01</strong></td><td class="b">USA + Canada</td><td style="color:#618070;font-size:12px">Gaucher type 1 + Niemann-Pick type C</td><td class="g">2027</td></tr>
+  </table>
+
+  <p style="margin-top:12px"><strong>Le modèle est optimal pour THX Pharma :</strong> la société <span class="hl">conserve le pilotage du développement clinique</span> des deux programmes, avec le soutien financier et scientifique de Biocodex. Elle ne se prive pas de la valeur opérationnelle créée — elle externalise le risque financier tout en gardant la main. C'est exactement le modèle qu'une small cap biotech doit viser pour maximiser la valeur actionnaire.</p>
+  <p>Pour Exeltis (partenaire historique sur TX01 hors US/Canada), l'accord ne change rien — les deux partenaires vont commercialiser TX01 ensemble sur leurs territoires respectifs dès 2027.</p>
+</div>
+
+<!-- PRÉSENTATION PIPELINE -->
+<div class="gap"></div>
+<div class="slbl">Pipeline — deux programmes, trois maladies rares, besoins médicaux non couverts</div>
+
+<div class="card">
+  <h3><span class="ic">💊</span> TX01 — Gaucher type 1 &amp; Niemann-Pick type C · Commercialisation 2027</h3>
+  <p>TX01 est une <strong>nouvelle formulation orale d'une molécule déjà approuvée</strong> — ce point est crucial pour le profil de risque réglementaire : la substance active a déjà fait ses preuves sur le plan de la sécurité. THX Pharma l'a reformulée pour optimiser sa biodisponibilité et son efficacité dans deux pathologies lysosomales rares.</p>
+  <table class="dt">
+    <tr><th>Indication</th><th>Prévalence</th><th>Traitement actuel</th><th>Avantage TX01</th></tr>
+    <tr><td>Maladie de Gaucher type 1</td><td style="color:#618070;font-size:12px">~1/40 000 — rare</td><td style="color:#618070;font-size:12px">Thérapies enzymatiques IV lourdes</td><td class="g">Formulation orale ✓</td></tr>
+    <tr><td>Niemann-Pick type C</td><td style="color:#618070;font-size:12px">~1/150 000 — ultra-rare</td><td style="color:#618070;font-size:12px">Options limitées, neurologique</td><td class="g">Adresse composante neuro ✓</td></tr>
+  </table>
+  <p style="margin-top:8px">Les <strong>dépôts réglementaires sont prévus en 2026</strong> — dossiers FDA (Biocodex US) et EMA (Exeltis) — avec une <span class="hl">commercialisation ciblée dès 2027</span>. C'est le programme le plus proche de générer des revenus. Le statut "molécule déjà approuvée reformulée" simplifie et accélère le parcours réglementaire.</p>
+</div>
+
+<div class="card">
+  <h3><span class="ic">🧠</span> Batten-1 — Maladie de Batten juvénile (CLN3) · Premier traitement potentiel · Phase 3 2026</h3>
+  <p>La maladie de Batten juvénile (CLN3) est une <strong>maladie neurodégénérative pédiatrique ultra-rare</strong> — perte progressive de la vision, déclin cognitif et moteur, décès à l'âge adulte jeune. <span class="hlr">Aucun traitement approuvé n'existe à ce jour.</span> Batten-1 vise à être le <strong>premier traitement disponible pour cette pathologie</strong>.</p>
+  <ul class="ul">
+    <li>Batten-1 a été initialement développé par la <span class="hl">Beyond Batten Disease Foundation</span> — une fondation de patients avec une légitimité scientifique reconnue</li>
+    <li class="neu">Biocodex prend en charge <span class="hlt">100% des coûts de développement</span> — THX Pharma pilote sans exposer son bilan</li>
+    <li><span class="hlp">Phase 3 démarrage prévu en 2026</span> — accès compassionnel géré par Biocodex</li>
+    <li class="neu">Lancement international ciblé à <span class="hlw">horizon 2029-2030</span> selon Biocodex</li>
+    <li>Pathologie ultra-rare = forte probabilité de <span class="hl">désignation orpheline</span> et procédures réglementaires accélérées (FDA/EMA)</li>
+  </ul>
+</div>
+
+<!-- ANALYSE TECHNIQUE -->
+<div class="gap"></div>
+<div class="slbl">Analyse technique — Graphique journalier au 12/03/2026</div>
+<div class="card">
+  <h3><span class="ic">📈</span> Cours 3,13 € · Fibo 38,2% · RSI hebdo 58,08 · MACD +0,244 haussier</h3>
+  <p>Le graphique journalier montre un <strong>mouvement en deux temps</strong> : explosion de +60% le 11 février lors de l'annonce Biocodex (de ~2,23 € → pic ~4,60 €), puis une consolidation naturelle sur 4 semaines ramenant le cours vers les niveaux Fibonacci. Le cours à 3,13 € est en train de tester le <strong>Fibo 38,2% à 3,136 €</strong> — un niveau technique crucial.</p>
+
+  <div style="margin:14px 0">
+    <div class="frow"><div class="flvl">Base Fibo</div><div class="fprice" style="color:#1e3028">2,231 €</div><div class="fbar"><div class="fbar-fill" style="width:5%;background:#1e3028"></div></div><span class="ftag"><span class="tag" style="background:rgba(30,48,40,.4);color:#2d5040">0% — base</span></span></div>
+    <div class="frow"><div class="flvl">Fibo 23,61%</div><div class="fprice" style="color:#475569">2,790 €</div><div class="fbar"><div class="fbar-fill" style="width:23%;background:#475569"></div></div><span class="ftag"><span class="tag tw">S2</span></span></div>
+    <div class="frow"><div class="flvl">Fibo 38,2%</div><div class="fprice">3,136 €</div><div class="fbar"><div class="fbar-fill" style="width:40%;background:var(--green)"></div></div><span class="ftag"><span class="tag tg">S1 clé ✓</span></span></div>
+    <div class="frow" style="background:rgba(74,222,128,.04);border-radius:6px;padding:7px 4px"><div class="flvl" style="color:var(--accent)">COURS</div><div class="fprice" style="color:var(--accent)">3,130 €</div><div class="fbar"><div class="fbar-fill" style="width:41%;background:var(--accent)"></div></div><span class="ftag"><span class="tag tg">sur S1</span></span></div>
+    <div class="frow"><div class="flvl">Fibo 50%</div><div class="fprice" style="color:var(--warn)">3,415 €</div><div class="fbar"><div class="fbar-fill" style="width:58%;background:var(--warn)"></div></div><span class="ftag"><span class="tag tw">R1 proche</span></span></div>
+    <div class="frow"><div class="flvl">Fibo 61,8%</div><div class="fprice" style="color:var(--orange)">3,694 €</div><div class="fbar"><div class="fbar-fill" style="width:72%;background:var(--orange)"></div></div><span class="ftag"><span class="tag" style="background:rgba(251,146,60,.12);color:var(--orange)">R2</span></span></div>
+    <div class="frow"><div class="flvl">Fibo 100%</div><div class="fprice" style="color:var(--purple)">4,599 €</div><div class="fbar"><div class="fbar-fill" style="width:100%;background:var(--purple)"></div></div><span class="ftag"><span class="tag tp">pic initial</span></span></div>
+  </div>
+
+  <div style="background:rgba(74,222,128,.06);border:1px solid rgba(74,222,128,.2);border-radius:8px;padding:14px 16px;margin:12px 0">
+    <div style="font-size:11px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--accent);margin-bottom:8px">✅ RSI hebdo 58,08 — zone saine · MACD +0,244 — structure haussière préservée</div>
+    <p style="color:#a7f3d0;margin-bottom:6px;font-size:13.5px">Contrairement à de nombreux titres qui "gavage" post-deal, THX Pharma affiche un <strong style="color:#d1fae5">RSI hebdomadaire à 58,08</strong> — zone neutre-haussière, loin de la surchauffe. Le MACD Zéro Lag à <strong style="color:#d1fae5">+0,244</strong> est clairement positif. La correction post-annonce est <strong style="color:#d1fae5">saine et technique</strong>, pas un signal de retournement.</p>
+    <p style="color:#a7f3d0;margin-bottom:0;font-size:13.5px">Le cours teste le Fibo 38,2% à <strong style="color:#d1fae5">3,136 €</strong> — c'est le niveau clé. Si ce niveau tient en clôture (weekly ou journalière), c'est un signal d'accumulation classique après un breakout de grande amplitude. Un rebond depuis ici vers <strong style="color:#d1fae5">3,415 € (50%)</strong> serait le scénario technique le plus naturel.</p>
+  </div>
+
+  <p>L'Ichimoku hebdomadaire confirme une structure haussière : le Senkou Span A (3,408 €) et B (1,982 €) construisent un nuage dont le cours est au-dessus. La <strong>SMA(20) journalière à 3,543 €</strong> et la <strong>Boll Sup à 3,543 €</strong> constituent les premières résistances dynamiques à franchir pour reprendre la trajectoire haussière.</p>
+</div>
+
+<!-- CALENDRIER -->
+<div class="gap"></div>
+<div class="slbl">Calendrier financier &amp; clinique 2026</div>
+<div class="card">
+  <h3><span class="ic">📌</span> Jalons 2026 — dense et catalyseur-riche</h3>
+  <div class="tl">
+    <div class="tli">
+      <div class="tld g"></div>
+      <div class="tldate">10 FÉV. 2026 ✅</div>
+      <div class="tllbl">Accord Biocodex signé — 12 M€ upfront + 161 M€ milestones <span class="tag tg">TRANSFORMATEUR</span></div>
+      <div class="tldesc">+60% sur la séance du 11 fév. Biocodex : licence mondiale Batten-1 + US/Canada TX01. Prise en charge 100% des coûts Batten-1.</div>
+    </div>
+    <div class="tli">
+      <div class="tld g"></div>
+      <div class="tldate">19 FÉV. 2026 ✅</div>
+      <div class="tllbl">Trésorerie 31/12/2025 publiée — 7,764 M€ <span class="tag tg">PUBLIÉ</span></div>
+      <div class="tldesc">Progression vs 1,979 M€ en septembre. Confirmation du bon contrôle des dépenses en 2025.</div>
+    </div>
+    <div class="tli">
+      <div class="tld t"></div>
+      <div class="tldate">MARS 2026 ⏳</div>
+      <div class="tllbl">Versement Biocodex 12 M€ <span class="tag tt">IMMINENT</span></div>
+      <div class="tldesc">Le paiement initial de 12 M€ doit être perçu "courant mars 2026" selon le communiqué du 19 fév. Trésorerie pro forma → 21,7 M€. Catalyseur cash visible.</div>
+    </div>
+    <div class="tli">
+      <div class="tld w"></div>
+      <div class="tldate">2026 — EN COURS</div>
+      <div class="tllbl">Dépôts réglementaires TX01 — FDA + EMA <span class="tag tw">ATTENDU</span></div>
+      <div class="tldesc">Dossiers de mise sur le marché soumis aux autorités. Biocodex gère US/Canada, Exeltis gère les autres territoires. Accélérateur de la commercialisation 2027.</div>
+    </div>
+    <div class="tli">
+      <div class="tld w"></div>
+      <div class="tldate">2026 — INITIATION</div>
+      <div class="tllbl">Phase 3 Batten-1 — démarrage <span class="tag tw">CATALYSEUR MAJEUR</span></div>
+      <div class="tldesc">Première étude Phase 3 sur la maladie de Batten juvénile CLN3 — potentiellement le premier traitement au monde pour cette pathologie dévastatrice. 100% financé par Biocodex.</div>
+    </div>
+    <div class="tli">
+      <div class="tld p"></div>
+      <div class="tldate">28 AVRIL 2026</div>
+      <div class="tllbl">Résultats financiers annuels 2025 + trésorerie 31/03/2026 <span class="tag tp">PUBLICATION</span></div>
+      <div class="tldesc">Confirmation du compte de résultat 2025 et mise à jour de la trésorerie incluant le versement Biocodex. Prochain point financier majeur.</div>
+    </div>
+    <div class="tli">
+      <div class="tld g"></div>
+      <div class="tldate">2027</div>
+      <div class="tllbl">Commercialisation TX01 — premières ventes <span class="tag tg">REVENUS</span></div>
+      <div class="tldesc">Biocodex et Exeltis lancent TX01 dans leurs territoires respectifs. Premières redevances à deux chiffres perçues par THX Pharma. Transition de biotech pré-revenue vers biotech commerciale.</div>
+    </div>
+  </div>
+</div>
+
+<!-- CONSENSUS -->
+<div class="gap"></div>
+<div class="slbl">Consensus analystes au 12/03/2026</div>
+<div class="card">
+  <h3><span class="ic">📊</span> 1 analyste · Achat · Objectif 5,80 € · Potentiel +85%</h3>
+  <table class="dt">
+    <tr><th>Broker</th><th>Objectif</th><th>Recommandation</th><th>Potentiel vs 3,13 €</th></tr>
+    <tr><td>Broker (Zonebourse)</td><td class="g">5,80 €</td><td style="color:#618070">Achat</td><td class="g">+85%</td></tr>
+  </table>
+  <div style="background:rgba(192,132,252,.07);border:1px solid rgba(192,132,252,.25);border-radius:8px;padding:14px 16px;margin:14px 0">
+    <div style="font-size:11px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--purple);margin-bottom:8px">💡 Un seul analyste — et l'objectif n'intègre probablement pas encore l'amplitude totale du deal Biocodex</div>
+    <p style="color:#e9d5ff;margin-bottom:6px;font-size:13.5px">L'objectif à 5,80 € a vraisemblablement été émis ou revu autour de l'annonce Biocodex de février 2026. Il reste <strong style="color:#faf5ff">conservateur au regard de la valeur potentielle totale</strong> : 173 M€ de deal + redevances à deux chiffres pour une capitalisation de ~37 M€, c'est une asymétrie rare.</p>
+    <p style="color:#e9d5ff;margin-bottom:0;font-size:13.5px">Ce dossier reste sous-suivi par les brokers — un seul analyste publié sur Euronext Growth. <strong style="color:#faf5ff">L'entrée de nouveaux brokers en couverture serait un catalyseur de re-rating supplémentaire</strong>, comme cela arrive systématiquement quand un deal majeur attire l'attention des équipes actions de taille moyenne.</p>
+  </div>
+</div>
+
+<!-- CT MT LT -->
+<div class="gap"></div>
+<div class="slbl">Perspectives CT / MT / LT</div>
+<div class="pg">
+  <div class="pc">
+    <div class="hz" style="color:var(--warn)">🕐 CT · 0-3 mois</div>
+    <h4>Catalyseurs</h4>
+    <ul>
+      <li>Versement 12 M€ Biocodex (mars)</li>
+      <li>Résultats annuels 28 avr.</li>
+      <li>Point trésorerie 31/03</li>
+      <li>Initiation Phase 3 Batten-1</li>
+      <li>Rebond technique Fibo 38,2%</li>
+    </ul>
+    <h4 style="margin-top:10px;color:var(--warn)">Risques CT</h4>
+    <ul>
+      <li>Titre peu liquide → volatilité forte</li>
+      <li>Prise de profit post-deal classique</li>
+      <li>RSI journalier à surveiller</li>
+    </ul>
+  </div>
+  <div class="pc">
+    <div class="hz" style="color:var(--green)">📅 MT · 3-12 mois</div>
+    <h4>Moteurs</h4>
+    <ul>
+      <li>Dépôts régl. TX01 (FDA/EMA)</li>
+      <li>Phase 3 Batten-1 premiers résultats</li>
+      <li>Entrée nouveaux brokers en couverture</li>
+      <li>Premières redevances TX01 (2027)</li>
+      <li>Deal secondaire potentiel</li>
+    </ul>
+    <h4 style="margin-top:10px;color:var(--warn)">Risques MT</h4>
+    <ul>
+      <li>Retard réglementaire TX01</li>
+      <li>Données Phase 3 Batten-1 décevantes</li>
+      <li>Faible liquidité = forte sensibilité</li>
+    </ul>
+  </div>
+  <div class="pc">
+    <div class="hz" style="color:var(--purple)">🔭 LT · 12 mois+</div>
+    <h4>Thèse haussière</h4>
+    <ul>
+      <li>TX01 commercial → revenus récurrents</li>
+      <li>Redevances deux chiffres sur ventes</li>
+      <li>Batten-1 = premier traitement CLN3</li>
+      <li>Milestones 161 M€ en cascade</li>
+      <li>Cible d'acquisition (Biocodex)</li>
+    </ul>
+    <h4 style="margin-top:10px;color:var(--danger)">Risques LT</h4>
+    <ul>
+      <li>Echec Phase 3 Batten-1</li>
+      <li>Rejet FDA/EMA TX01</li>
+      <li>Arrivée concurrent sur CLN3</li>
+    </ul>
+  </div>
+</div>
+
+<!-- VERDICT -->
+<div class="gap"></div>
+<div class="slbl">Mon avis personnel</div>
+<div class="verdict">
+  <div class="vt">💬 Verdict</div>
+  <p>THX Pharma a réalisé en février 2026 <strong>exactement ce qu'une small cap biotech lyonnaise devait faire</strong> : signer un partenariat avec un grand groupe pharma, sécuriser sa trésorerie jusqu'en 2028, externaliser le risque financier tout en conservant le pilotage scientifique et en gardant les redevances. Le tout pour une deal value qui représente 4-5× sa capitalisation. C'est du travail d'orfèvre.</p>
+  <p>Ce qui me convainc :</p>
+  <ul class="ul" style="margin:8px 0">
+    <li><span class="hl">Biocodex n'est pas un partenaire de façade</span> — c'est un groupe pharma international indépendant à plus d'1 Md€ de CA, qui met 12 M€ cash et couvre 100% des coûts de développement de Batten-1. Il croit au pipeline.</li>
+    <li class="neu"><span class="hlt">TX01 en 2027</span> — une molécule déjà approuvée reformulée est le profil réglementaire le plus favorable qui soit. Le risque d'échec FDA est structurellement bas.</li>
+    <li><span class="hlp">Batten-1 = first-in-class</span> dans une pathologie orpheline sans traitement. Les désignations orphelines + accélérées (Breakthrough, PRIME EMA) sont presque systématiques dans ce contexte.</li>
+    <li class="neu">Le <span class="hlw">Fibo 38,2% à 3,136 €</span> est le niveau d'entrée idéal pour du MT/LT — confluence support horizontal et niveau de retracement classique post-breakout.</li>
+  </ul>
+  <p><strong>Le risque principal :</strong> une Phase 3 Batten-1 négative serait un choc, mais la trésorerie à 21,7 M€ et les revenus TX01 à venir donnent au titre un plancher fondamental solide même dans ce scénario. La perte totale n'est pas le scénario probable ici — ce qui différencie THX Pharma de beaucoup de biotechs pré-revenue.</p>
+  <div class="conclu">
+    🎯 <strong>Dossier de conviction MT/LT avec un point d'entrée technique excellent au Fibo 38,2% (~3,13 €).</strong> <span style="color:var(--warn);font-weight:600">Support clé : 3,136 €. Résistances : 3,415 € → 3,694 € → 4,041 €. Prochain catalyseur : versement Biocodex 12 M€ en mars + résultats annuels 28 avril. Objectif analyste : 5,80 € (+85%). Thèse LT : commercialisation TX01 2027 + milestones Batten-1 en cascade.</span>
+  </div>
+</div>
+
+<div style="margin-top:20px;padding:12px;background:var(--surface);border-radius:8px;font-size:11.5px;color:var(--muted);text-align:center;border:1px solid var(--border)">
+  Sources : Communiqués THX Pharma / Theranexus (10/02/2026, 19/02/2026), Lyonbiopôle, BFM Bourse, Boursorama, PharmExec, BusinessWire, Zonebourse · Analyse personnelle non professionnelle · Ne constitue pas un conseil en investissement · DYOR
+</div>
+
+</div>
+</body>
+</html>
